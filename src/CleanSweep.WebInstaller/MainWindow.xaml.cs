@@ -170,37 +170,38 @@ namespace CleanSweep.WebInstaller
 
                 TxtStatus.Text = $"Downloading CleanSweep ({totalMB})...";
 
-                using var contentStream = await response.Content.ReadAsStreamAsync();
-                using var fileStream = new FileStream(tempZipPath, FileMode.Create, FileAccess.Write, FileShare.None, 81920);
-
-                long downloaded = 0;
-                var buffer = new byte[81920];
-                int bytesRead;
-                var lastUpdate = DateTime.UtcNow;
-
-                while ((bytesRead = await contentStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+                using (var contentStream = await response.Content.ReadAsStreamAsync())
+                using (var fileStream = new FileStream(tempZipPath, FileMode.Create, FileAccess.Write, FileShare.None, 81920))
                 {
-                    await fileStream.WriteAsync(buffer, 0, bytesRead);
-                    downloaded += bytesRead;
+                    long downloaded = 0;
+                    var buffer = new byte[81920];
+                    int bytesRead;
+                    var lastUpdate = DateTime.UtcNow;
 
-                    // Update UI at most every 100ms
-                    if ((DateTime.UtcNow - lastUpdate).TotalMilliseconds > 100)
+                    while ((bytesRead = await contentStream.ReadAsync(buffer, 0, buffer.Length)) > 0)
                     {
-                        lastUpdate = DateTime.UtcNow;
-                        double downloadedMB = downloaded / 1048576.0;
+                        await fileStream.WriteAsync(buffer, 0, bytesRead);
+                        downloaded += bytesRead;
 
-                        if (totalBytes > 0)
+                        // Update UI at most every 100ms
+                        if ((DateTime.UtcNow - lastUpdate).TotalMilliseconds > 100)
                         {
-                            double percent = (double)downloaded / totalBytes * 100;
-                            ProgressBar.Value = percent;
-                            TxtProgressPercent.Text = $"{percent:F0}%";
-                            TxtDownloadSize.Text = $"{downloadedMB:F1} MB / {totalMB}";
-                            TxtStatus.Text = $"Downloading... {downloadedMB:F1} MB / {totalMB}";
-                        }
-                        else
-                        {
-                            TxtDownloadSize.Text = $"{downloadedMB:F1} MB downloaded";
-                            TxtStatus.Text = $"Downloading... {downloadedMB:F1} MB";
+                            lastUpdate = DateTime.UtcNow;
+                            double downloadedMB = downloaded / 1048576.0;
+
+                            if (totalBytes > 0)
+                            {
+                                double percent = (double)downloaded / totalBytes * 100;
+                                ProgressBar.Value = percent;
+                                TxtProgressPercent.Text = $"{percent:F0}%";
+                                TxtDownloadSize.Text = $"{downloadedMB:F1} MB / {totalMB}";
+                                TxtStatus.Text = $"Downloading... {downloadedMB:F1} MB / {totalMB}";
+                            }
+                            else
+                            {
+                                TxtDownloadSize.Text = $"{downloadedMB:F1} MB downloaded";
+                                TxtStatus.Text = $"Downloading... {downloadedMB:F1} MB";
+                            }
                         }
                     }
                 }
