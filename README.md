@@ -8,7 +8,7 @@
       <img src="https://img.shields.io/github/v/release/Md-Saim/CleanSweep?style=for-the-badge&color=7DF1D1&logo=github" alt="Latest Release" />
     </a>
     <a href="https://github.com/Md-Saim/CleanSweep/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/Md-Saim/CleanSweep?style=for-the-badge&color=262A33" alt="License" />
+      <img src="https://img.shields.io/badge/License-MIT-262A33?style=for-the-badge" alt="License" />
     </a>
     <img src="https://img.shields.io/badge/Platform-Windows_10_|_11-blue?style=for-the-badge" alt="Platform" />
   </p>
