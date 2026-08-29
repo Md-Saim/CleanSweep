@@ -47,7 +47,7 @@ CleanSweep uses a tiny, self-contained web installer that automatically fetches 
 
 ## 📸 Screenshots
 
-To add screenshots, simply place your image files in an `assets` folder in the root of the repository with the names listed below.
+
 
 | Dashboard & Monitoring | Tray Menu |
 | :---: | :---: |
