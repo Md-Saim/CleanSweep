@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanSweep.Core", "src\CleanSweep.Core\CleanSweep.Core.csproj", "{11111111-2222-3333-4444-555555555555}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanSweep.UI", "src\CleanSweep.UI\CleanSweep.UI.csproj", "{66666666-7777-8888-9999-AAAAAAAAAAAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanSweep.WebInstaller", "src\CleanSweep.WebInstaller\CleanSweep.WebInstaller.csproj", "{BBBBBBBB-CCCC-DDDD-EEEE-FFFFFFFFFFFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1996A489-9445-4C34-BA5D-BD46A7258BD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11111111-2222-3333-4444-555555555555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66666666-7777-8888-9999-AAAAAAAAAAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66666666-7777-8888-9999-AAAAAAAAAAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66666666-7777-8888-9999-AAAAAAAAAAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66666666-7777-8888-9999-AAAAAAAAAAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBBBBBBB-CCCC-DDDD-EEEE-FFFFFFFFFFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBBBBBBB-CCCC-DDDD-EEEE-FFFFFFFFFFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBBBBBBB-CCCC-DDDD-EEEE-FFFFFFFFFFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBBBBBBB-CCCC-DDDD-EEEE-FFFFFFFFFFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BBBBBBBB-CCCC-DDDD-EEEE-FFFFFFFFFFFF} = {1996A489-9445-4C34-BA5D-BD46A7258BD2}
+	EndGlobalSection
+EndGlobal

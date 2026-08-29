@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>..\CleanSweep.UI\Assets\logo.ico</ApplicationIcon>
+    <AssemblyName>CleanSweepSetup</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="..\CleanSweep.UI\Assets\logo.png">
+      <Link>Assets\logo.png</Link>
+    </Resource>
+    <Resource Include="..\CleanSweep.UI\Assets\logo.ico">
+      <Link>Assets\logo.ico</Link>
+    </Resource>
+  </ItemGroup>
+
+</Project>
