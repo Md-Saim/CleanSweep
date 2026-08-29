@@ -47,15 +47,15 @@ CleanSweep uses a tiny, self-contained web installer that automatically fetches 
 
 ## 📸 Screenshots
 
-*(Add your screenshots and GIFs here)*
+To add screenshots, simply place your image files in an `assets` folder in the root of the repository with the names listed below.
 
 | Dashboard & Monitoring | Settings & About |
 | :---: | :---: |
-| <img src="URL_TO_YOUR_DASHBOARD_IMAGE" alt="Dashboard" width="400"/> | <img src="URL_TO_YOUR_SETTINGS_IMAGE" alt="Settings" width="400"/> |
+| <img src="assets/dashboard.png" alt="Dashboard" width="400"/> | <img src="assets/settings.png" alt="Settings" width="400"/> |
 
 | Disk Analyzer | Liquid Glass Button |
 | :---: | :---: |
-| <img src="URL_TO_YOUR_ANALYZER_IMAGE" alt="Analyzer" width="400"/> | <img src="URL_TO_YOUR_GIF" alt="Animation GIF" width="400"/> |
+| <img src="assets/analyzer.png" alt="Analyzer" width="400"/> | <img src="assets/animation.gif" alt="Animation GIF" width="400"/> |
 
 ---
 
@@ -70,16 +70,7 @@ CleanSweep is built using modern Windows development frameworks and tools:
 
 ---
 
-## 👨‍💻 About the Developer
 
-Developed by **Md Saim**  
-*AI Engineer & Gen AI Expert*
-
-Specializing in AI automation, custom AI workflows, and intelligent system solutions. Passionate about building tools that leverage cutting-edge technologies to solve real-world problems.
-
-- **GitHub**: [@Md-Saim](https://github.com/Md-Saim)
-
----
 
 ## 🤝 Contributing
 
