@@ -49,9 +49,9 @@ CleanSweep uses a tiny, self-contained web installer that automatically fetches 
 
 To add screenshots, simply place your image files in an `assets` folder in the root of the repository with the names listed below.
 
-| Dashboard & Monitoring | Settings & About |
+| Dashboard & Monitoring | Tray Menu |
 | :---: | :---: |
-| <img src="assets/dashboard.png" alt="Dashboard" width="400"/> | <img src="assets/settings.png" alt="Settings" width="400"/> |
+| <img src="assets/dashboard.png" alt="Dashboard" width="400"/> | <img src="assets/cleanfromtray.png" alt="Tray Menu" width="400"/> |
 
 | Disk Analyzer | Liquid Glass Button |
 | :---: | :---: |
