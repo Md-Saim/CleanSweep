@@ -69,7 +69,7 @@ namespace CleanSweep.UI
             if (DataContext is MainViewModel vm)
                 vm.Dispose();
             
-            Environment.Exit(0);
+            Process.GetCurrentProcess().Kill();
         }
 
         // ═══════════════════════════════════════════
