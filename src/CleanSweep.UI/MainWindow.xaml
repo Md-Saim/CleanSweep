@@ -499,14 +499,19 @@
                                         </Style.Triggers>
                                     </Style>
                                 </Border.Style>
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="🔗" FontSize="16" Margin="0,0,10,0" VerticalAlignment="Center"/>
-                                    <StackPanel>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="🔗" FontSize="16" Margin="0,0,10,0" VerticalAlignment="Center"/>
+                                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
                                         <TextBlock Text="GitHub" FontSize="13" FontWeight="SemiBold" Foreground="{StaticResource TextPrimaryBrush}"/>
                                         <TextBlock Text="github.com/Md-Saim" FontSize="11" Foreground="{StaticResource AccentMintBrush}"/>
                                     </StackPanel>
-                                    <TextBlock Text="↗" FontSize="14" Foreground="{StaticResource TextMutedBrush}" VerticalAlignment="Center" Margin="auto,0,0,0" HorizontalAlignment="Right"/>
-                                </StackPanel>
+                                    <TextBlock Grid.Column="2" Text="↗" FontSize="14" Foreground="{StaticResource TextMutedBrush}" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                                </Grid>
                             </Border>
                         </StackPanel>
                     </Border>
